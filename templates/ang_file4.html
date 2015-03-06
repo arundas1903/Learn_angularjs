@@ -1,0 +1,22 @@
+<html>
+	<head>
+		<script src="/home/user/Learn_angularjs/scripts/angular.min.js"></script>
+		<script src="/home/user/Learn_angularjs/scripts/index.js"></script>
+	</head>
+	<body>
+		<div ng-app="" ng-init="apple_cost=50; orange_cost=10">
+				<p>
+					Enter quantity of apple
+					<input ng-model="apple_quantity" type="num">
+					<span>Apple Cost: {{apple_cost}}</span>
+					<span>Total<input value="{{apple_quantity * apple_cost}}"></span>
+				</p>
+				<p>
+					Enter quantity of orange
+					<input ng-model="orange_quantity" type="num">
+					<span>Orange Cost: {{orange_cost}}</span>
+					<span><input value="{{orange_quantity * orange_cost}}"></span>
+				</p>
+		</div>
+	</body>
+</html>

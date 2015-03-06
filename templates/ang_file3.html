@@ -1,0 +1,24 @@
+<html>
+	<head>
+		<script src="/home/user/Learn_angularjs/scripts/angular.min.js"></script>
+		<script src="/home/user/Learn_angularjs/scripts/index.js"></script>
+	</head>
+	<body>
+		<h1>Application 3</h1>
+		<div ng-app="" ng-init="countries=[{locale: 'en-US', name: 'United States'},{locale: 'en-GB', name: 'Kingdom'},{locale: 'en-FR', name: 'France'}]">
+			<p>
+				Enter you name:
+				<input ng-model="name" type="text">
+			</p>
+			<p>
+				Hello <span ng-bind="name"></span>
+			</p>
+			<p>List of Countries with locale:</p>
+		    <ol>
+		    	<li ng-repeat="country in countries">
+		        {{ 'Country: ' + country.name + ', Locale: ' + country.locale }}
+		        </li>
+		   	</ol>
+		</div>
+	</body>
+</html>
