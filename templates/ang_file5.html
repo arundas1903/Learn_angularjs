@@ -1,0 +1,15 @@
+<html>
+	<head>
+		<script src="/home/user/Learn_angularjs/scripts/angular.min.js"></script>
+		<script src="/home/user/Learn_angularjs/scripts/index2.js"></script>
+	</head>
+	<body>
+		<h2>Angular JS controller Example</h2>
+		<div ng-app="" ng-controller="studentController">
+			Enter first name: <input type="text" ng-model="student.firstName"><br><br>
+			Enter last name: <input type="text" ng-model="student.lastName"><br>
+			<br>
+			You are entering: {{student.fullName()}}
+		</div>
+	</body>
+</html>
